@@ -7,6 +7,9 @@ def product_list(numbers):
         product *= num
     return product
 
+def reverse_list(numbers):
+    return numbers[::-1]
+
 def main():
     # Get user input for a list of numbers
     input_numbers = input("Enter numbers separated by spaces: ")
@@ -22,3 +25,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
