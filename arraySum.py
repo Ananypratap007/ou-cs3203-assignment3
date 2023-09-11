@@ -22,6 +22,10 @@ def main():
     # Calculate and print the product
     result_product = product_list(numbers)
     print("Product of the numbers:", result_product)
+    
+     # Reverse the list and print
+    reversed_numbers = reverse_list(numbers)
+    print("Reversed list of numbers:", reversed_numbers)
 
 if __name__ == "__main__":
     main()
