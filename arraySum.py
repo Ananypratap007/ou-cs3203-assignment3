@@ -7,10 +7,18 @@ def product_list(numbers):
         product *= num
     return product
 
-# Example usage:
-ex_numbers = [1, 2, 3, 4, 5]
-result = sum_list(ex_numbers)
-print("Sum of the numbers:", result)
+def main():
+    # Get user input for a list of numbers
+    input_numbers = input("Enter numbers separated by spaces: ")
+    numbers = [float(x) for x in input_numbers.split()]
 
-result_product = product_list(ex_numbers)
-print("Product of the numbers:", result_product)
+    # Calculate and print the sum
+    result_sum = sum_list(numbers)
+    print("Sum of the numbers:", result_sum)
+
+    # Calculate and print the product
+    result_product = product_list(numbers)
+    print("Product of the numbers:", result_product)
+
+if __name__ == "__main__":
+    main()
